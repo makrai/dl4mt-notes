@@ -63,7 +63,7 @@
 * history
   * 1997 Spain Valencia and 
     * Forcada & Neco 1997
-      * encoder-decoder, recursive heter-assoc 
+      * encoder-decoder, recursive hetero-assoc 
     * Castano & Casacuberta 1997
   * Kalchbrenner & Blunsom 2013 cowboy
   * Sutskever et al 2014

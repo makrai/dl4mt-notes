@@ -15,7 +15,6 @@
 * notation
   * pr: reality
   * p: prob approxed by model
-* stat to nlp
 * input X, output W
 * bayesian decision rule
   * loss func L
@@ -29,13 +28,13 @@
   * speech, handwriting, trans
     * reference model
   * until 2011, emission prob was GMM
-  * simil between sppech and trans in hmm: phoneme lenght vs word reordering
+  * simil between spech and trans in hmm: phoneme lenght vs word reordering
   * p40 history of acou
   * p42 output nodes: 50 phonemes, now more phon feat
   * question (misinterpreted?)
     * google brain
       * lstm in acou
-* hadwiriting 
+* handwiriting 
   * database
 * trans
   * target x source
@@ -43,7 +42,7 @@
   * some parts of stat are irrelevant
     * unbiassed estimate...
 * ingredients
-  * merform meas
+  * perform meas
   * prob model
     * depend within and between X and W
     * elementary observs (GMM...) and string
@@ -74,7 +73,7 @@
   * interpret
     * gradient search, backprop
       * finds a local optimum
-        * in prectice, local optima are at the same level
+        * in practice, local optima are at the same level
 
 ### Softmax (3.4)
 * connection to Gaussian (generative) model
@@ -82,7 +81,6 @@
 * cross-entro is called mmi in asr
 * mlp and feature functions
 * last 5-6 years in neural speech
-* some subsections skipped
 
 ### rnn for sequ proc
 * h_t = activ(h_{t-1}W_1 + x_t W_2)
@@ -98,21 +96,21 @@
   * Schwenk 07: competitive
   * Sundermeyer (2012): tool
 * feedforward mlp
-  * projections layer
+  * projection layer
     * no sigmoid
-  * (second) hidde layer with sigmoid \sigma
+  * (second) hidden layer with sigmoid \sigma
   * output: softmax S
 * output layer
   * too large
   * word classes to make softmax more efficient
-    * exchange algorithm: make_class? in Moses of Giza
+    * exchange algorithm: make_class? in Moses or Giza
     * TODO miért nem |C| = sqrt(|V|)
 * recurrent
   * h_t = sig(A_2 x_t + R h_{t-1})
 * lstm
   * Hochreiter & Schmidthuber 97, Gers & Schraudolph 02
   * <- vanishing gradient
-    * (wxploding gradient is still unsolved)
+    * (exploding gradient is still unsolved)
   * each node replaced by...
     * input, output, forget
     * cell state c, net output s
@@ -125,7 +123,7 @@
   * now: traditional translation with neural lm
   * perlexity correlates
     * bleu: good
-    * TER: wordse
+    * TER: worse
 * summary
   * in asr, this has been developed for 25 years
   * question: in recurrent, why to have 300-dim word repr instead of 1-of-V
@@ -148,7 +146,7 @@
   * IBM-3-5 no closed form of train, only heu
   * IBM, then giza++
   * phrase
-    * there may be e words without alignet f word
+    * there may be e words without aligned f word
   * log-lin comb of models: max ent
     * theoretically a softmax over sentences
     
