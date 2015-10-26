@@ -1,8 +1,8 @@
-#by Kevin Duh,
+#by Kevin Duh
   * NAIST, Japan
     * (will be affiliated with JHU, US during the winter school)
 
-##DL tutorial
+## basics
 * DL is
   * a family of methods that uses
   * ...
