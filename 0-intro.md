@@ -1,6 +1,7 @@
 #by Kevin Duh,
   * NAIST, Japan
     * (will be affiliated with JHU, US during the winter school)
+
 ##DL tutorial
 * DL is
   * a family of methods that uses
@@ -55,6 +56,7 @@
     * generatiion
     * init MLP with RBMs
       * fine-tune with backprop
+
 ### Auto-encoder (AE)
   * cheap replacement for RBMs
   * stacked AEs
